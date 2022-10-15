@@ -22,9 +22,14 @@ body {
 
 .header {
   background: var(--white);
-  border-bottom: solid #ececec;
-  margin-bottom: 1px;
+  border-bottom: 1px solid #ececec;
 } 
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 
 .header-span,
@@ -224,12 +229,10 @@ body {
 
 .features-list {
   display: flex;
-  align-items: flex-start;
   list-style-type: none;
+  gap: 30px;
 }
-.features-list {
-  justify-content: center;
-}
+
 
 .features-second{
   padding-bottom: 94px;
@@ -237,23 +240,25 @@ body {
 }
 
 .features-list-second {
+  display: flex;
+  align-items: flex-start;
   list-style-type: none;
 }
 
 
 .features-second-container {
-  display: inline;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .features-item-second {
-  display: inline;
+  /* display: flex; */
 
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+.features-item {
+  flex-basis: calc((100%-90px) / 4);
 }
+
 .features-item-second:not(:last-child) {
   margin-right: 30px;
 }
@@ -369,14 +374,18 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--white);
-  margin-bottom: 20px;
+
 }
 
 .footer-contacts-list {
   list-style-type: none;
 }
 
-.adress {
+.address-first {
+  margin-top: 20px;
+}
+
+.address {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -416,7 +425,7 @@ body {
 .portfolio-title-text {
   padding: 20px 24px;
   background: #ffffff;
-  border: solid #eeeeee;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
 
