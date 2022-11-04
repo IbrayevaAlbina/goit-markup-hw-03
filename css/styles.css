@@ -137,6 +137,10 @@ img {
   display: flex;
 }
 
+.contacts-icons {
+  
+}
+
 .contacts-item: {
   display: flex;
   margin-left: auto;
